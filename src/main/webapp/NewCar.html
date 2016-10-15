@@ -1,0 +1,47 @@
+<div class="container">
+<div class="col-md-3" style="border: thin lightblue solid; border-radius: 5px;padding: 1em;">
+                <form class="form-horizontal">
+                    
+                    <fieldset >
+                        <legend>{{legend}}</legend>
+                        <div class="form-group">
+                            <label for="year" class="control-label col-xs-3" ><span class="label label-info">Year</span></label>
+                            <div class="col-xs-9">
+                                <input type="number" ng-model="cars.year" class="form-control" id="year" placeholder="Year">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="registered" class="control-label col-xs-3"><span class="label label-info">Registered</span></label>
+                            <div class="col-xs-9">
+                                <input type="date" ng-model="cars.registered" date-format="MM/dd/yyyy" date-type="string"  class="form-control" id="registered" placeholder="Registered">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="make" class="control-label col-xs-3"><span class="label label-info">Make</span></label>
+                            <div class="col-xs-9">
+                                <input type="text" ng-model="cars.make" class="form-control" id="make" placeholder="Make">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="model" class="control-label col-xs-3"><span class="label label-info">Model</span></label>
+                            <div class="col-xs-9">
+                                <input type="text" ng-model="cars.model" class="form-control" id="model" placeholder="Model">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description" class="control-label col-xs-3"><span class="label label-info">Description</span></label>
+                            <div class="col-xs-9">
+                                <input type="text" ng-model="cars.description" class="form-control" id="description" placeholder="Description">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="price" class="control-label col-xs-3"><span class="label label-info">Price</span></label>
+                            <div class="col-xs-9">
+                                <input type="text" ng-model="cars.price" class="form-control" id="price" placeholder="Price">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <button type="submit" ng-click="edit()" class="btn btn-primary">Save</button>
+            </div>
+    </div> 
